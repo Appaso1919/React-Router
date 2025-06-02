@@ -8,6 +8,8 @@ import Collage from './component/Nested_componet/Collage'
 import Studen from './component/Nested_componet/Studen'
 import Department from './component/Nested_componet/Department'
 import Details from './component/Nested_componet/Details'
+import UserList from './component/User/UserList'
+import UserDetail from './component/User/UserDetails'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <Route path="/" element={<Home/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/about" element={<About/>}></Route>
+       <Route path='/users' element={<UserList/>}/>
+       <Route path='/users/:id' element={<UserDetail/>}/>
       <Route path='/*' element={<PageNotfound/>}/>
 
       <Route path="/collage" element={<Collage/>}>
@@ -25,6 +29,7 @@ function App() {
       <Route path='department' element={<Department/>}/>
       <Route path='details' element={<Details/>}/>
       </Route>
+     
      </Routes>
     </>
   )

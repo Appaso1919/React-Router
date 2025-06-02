@@ -20,6 +20,9 @@ export default function Navbar() {
                 <li>
                     <Link className="link" to="/collage">Collage</Link>
                 </li>
+                <li>
+                    <Link className="link" to="/users">User</Link>
+                </li>
                </ul>
             </div>
         </div>
