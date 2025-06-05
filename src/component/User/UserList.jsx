@@ -10,7 +10,7 @@ export default function UserList() {
     ]
     return (
         <div style={{ marginLeft: 20 }}>
-            <h1>User Page</h1>
+            <h1>User Page using Dynamic routing</h1>
             {
                 userData.map((item) => (
                     <div>
